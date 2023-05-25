@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    background:linear-gradient( #000220,#000a5f,#b139b1,#2519c7,#000436) #000000;
+    background: url('wallpaperflare.com_wallpaper\ \(2\).jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #000000;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    color: #ffffff;
+  }
+  
+  nav {
+    display: none;
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    color: #00ffff;
+    background-color: #000000;
+  }
+  
+  #menuButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #menuButton:hover .bar {
+    background-color: #00ffff;
+  }
+  
+  .show-menu {
+    display: block;
+  }
+
+  .product-detail {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-image img {
+    width: 300px;
+    height: 350px;
+  }
+  
+  .product-specs {
+    margin-left: 40px;
+  }
+  
+  .product-specs h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .product-specs ul {
+    list-style-type: none;
+    text-align: left;
+  }
+  
+  .product-specs ul li {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .price-btn {
+    margin-top: 20px;
+  }
+  
+  .price-btn p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .price-btn .btn {
+    display: inline-block;
+    background-color: #00ffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .price-btn .btn:hover {
+    background-color: #00cccc;
+  }
+  
+  .customization {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .customization h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .customization-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .customization-options .option {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .customization-options .option img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .customization-options .option h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .customization-options .option p {
+    font-size: 1rem;
+    color: #0088cc;
+    margin-bottom: 10px;
+  }
+  
+  .customization-details {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .customization-details p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .customization-details .btn {
+    display: inline-block;
+  } 
+
+  .price-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .price-btn p {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 100px ;
+  }
+  
+  .btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #00ffff;
+    color: white;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 30px;
+  }

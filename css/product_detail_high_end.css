@@ -1,0 +1,114 @@
+body {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.product-detail {
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  margin-right: 50px;
+}
+
+.product-image img {
+  width: 400px;
+}
+
+.product-specs {
+  text-align: left;
+}
+
+.product-specs h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-specs ul li {
+  margin-bottom: 10px;
+}
+
+.price-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.price-btn p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #555;
+  color: white;
+}
+ 

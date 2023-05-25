@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background:#000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #000000;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  color: #ffffff;
+}
+
+nav {
+  display: none;
+  background-color: #000000;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+  background-color: #000000;
+}
+
+#menuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+#menuButton:hover .bar {
+  background-color: #00ffff;
+}
+
+.show-menu {
+  display: block;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.view-button {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #333;
+}
+
+.video {
+  position: relative;
+  background-image: url('wallpaperflare.com_wallpaper\ \(3\).jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.video h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 800px;
+  margin-top: 20px;
+  margin-left: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:1280px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background-image: url('wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 300px 0;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  margin-top: 55px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+ 
+.btn {
+  display: inline-block;
+  background-color: #00ffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00ffff;
+}
+
+.products {
+  padding: 100px 0;
+  text-align: center;
+  background-image: url('wallpaperflare.com_wallpaper\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.products h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.2rem;
+  color: #0088cc;
+  margin-bottom: 10px;
+}
+ 
+.about-us {
+  background-color: #000000;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.about-us h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.carousel-container {
+  width: 1700px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 5100px;
+  animation: slide 10s infinite;
+  transform: translateX(0);
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 1700px;
+}
+
+.carousel-item img {
+  width: 1700px;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-1700px);
+  }
+  55% {
+    transform: translateX(-1700px);
+  }
+  60% {
+    transform: translateX(-3400px);
+  }
+  85% {
+    transform: translateX(-3400px);
+  }
+  90% {
+    transform: translateX(-5100px);
+  }
+  100% {
+    transform: translateX(-5100px);
+  }
+}
+
+.carousel-container {
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.hero2 {
+  background-image: url('Screenshot\ \(38\).png');
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  color: #757575;
+  text-align: center;
+}
+
+.hero2 h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  background-color: #5050505b;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 15%;
+  margin: 10px;
+  opacity: 100%;
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature p {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: 'Razed Light';
+  src: url('HBM Razed Light.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Razed Bold';
+  src: url('HBM Razed Bold.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Razed Trend';
+  src: url('HBM Razed Trend.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Razed Galerie';
+  src: url('HBM Razed Galerie.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.custom-font {
+  font-family: 'Razed Galerie', sans-serif;
+}
+

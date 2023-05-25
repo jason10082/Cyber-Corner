@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.active {
+			background-color: #0088cc;
+			color: #ffffff;
+		}
+	</style>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var navItems = document.querySelectorAll("nav ul li a");
+
+			function handleButtonClick(event) {
+				event.preventDefault();
+				var clickedItem = event.target;
+				navItems.forEach(function(item) {
+					item.classList.remove("active");
+				});
+
+				clickedItem.classList.add("active");
+			}
+
+			navItems.forEach(function(item) {
+				item.addEventListener("click", handleButtonClick);
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Cyber Corner</h1>
+			<nav>
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</body>
+</html>

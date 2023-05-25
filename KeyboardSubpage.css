@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    background:linear-gradient( #000220,#000a5f,#8d1b8d,#aa19c7,#0099ff) #000000;
+    background: url('wallpaperflare.com_wallpaper\ \(2\).jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #000000;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    color: #ffffff;
+  }
+  
+  nav {
+    display: none;
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    color: #00ffff;
+    background-color: #000000;
+  }
+  
+  #menuButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #menuButton:hover .bar {
+    background-color: #00ffff;
+  }
+  
+  .show-menu {
+    display: block;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .view-button {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button:hover {
+    background-color: #333;
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  .hero {
+    background-image: url('wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .hero h2 {
+    font-size: 4rem;
+    margin-top: 55px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+   
+  .btn {
+    display: inline-block;
+    background-color: #00ffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #00ffff;
+  }
+  
+  .products {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 500px;
+    height: 300px;
+  }
+  
+  .product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    font-size: 1.2rem;
+    color: #0088cc;
+    margin-bottom: 10px;
+  }
+   
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+  }
+
+  @font-face {
+    font-family: 'Razed Light';
+    src: url('HBM Razed Light.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Razed Bold';
+    src: url('HBM Razed Bold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Razed Trend';
+    src: url('HBM Razed Trend.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Razed Galerie';
+    src: url('HBM Razed Galerie.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  .custom-font {
+    font-family: 'Razed Galerie', sans-serif;
+  }
+  

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cyber Corner</title>
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="carousel.css">
+ </head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="Screenshot__36_-removebg.png" width="250" height="40" alt="Logo">
+			<div id="menuButton" onclick="toggleMenu()">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			  </div>
+			  <nav id="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+			<script src="app.js"></script>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+			  <h2>Welcome to <span class="custom-font">Cyber Corner</span></h2>
+			  <p>Your one-stop shop for all things PC gaming!</p>
+			</div>
+		</section>		  
+ 
+			<div class="carousel-container">
+				<div class="carousel-slide">
+				  <img src="DALL·E 2023-05-17 22.23.45 - fill the erased area with same back ground colour.png" alt="Image 1">
+				  <img src="Banner-Overwatch-1700x480.jpg.png" alt="Image 2">
+				  <img src="Ryzen7000Launch-SocialBanners_1700x480-pv2thn94bjs8ghziqem1018gnj0r27kyxw9zv7r4qo (1).webp" alt="Image 3">
+				  <img src="DALL·E 2023-05-17 22.23.45 - fill the erased area with same back ground colour.png" alt="Image 1" id="lastClone">
+				  <img src="Ryzen7000Launch-SocialBanners_1700x480-pv2thn94bjs8ghziqem1018gnj0r27kyxw9zv7r4qo (1).webp" alt="Image 3" id="firstClone">
+				</div>
+			  </div>
+
+			  <section class="service">
+				<section class="hero2">
+				  <h2>Why Choose Us</h2>
+				  <section class="features">
+					<div class="feature">
+					  <i class="fas fa-truck"></i>
+					  <img src="icons-08.webp" height="100" alt="Delivery">
+					  <p>Nationwide Shipping</p>
+					</div>
+					<div class="feature">
+					  <i class="fas fa-spray-can"></i>
+					  <img src="icons-13.webp" height="100" alt="Cleaning">
+					  <p>Free Dust Cleaning</p>
+					</div>
+					<div class="feature">
+					  <i class="fas fa-percent"></i>
+					  <img src="icons-15.png" height="100" alt="Rebate">
+					  <p>Rebate For Future Upgrade</p>
+					</div>
+					<div class="feature">
+					  <i class="fas fa-cubes"></i>
+					  <img src="icons-07.webp" height="100" alt="Cable">
+					  <p>Cable Management</p>
+					</div>
+					<div class="feature">
+					  <i class="fas fa-bolt"></i>
+					  <img src="icons-06.webp" height="100" alt="Testing">
+					  <p>Professional Stress Testing</p>
+					</div>
+				  </section>
+				</section>
+			</section>
+			 
+
+			<script>
+				const slides = document.querySelectorAll('.carousel-slide img');
+				let currentIndex = 0;
+				const intervalTime = 5000;
+              
+				slides[currentIndex].classList.add('active');
+              
+				setInterval(() => {
+					slides[currentIndex].classList.remove('active');
+					currentIndex++;
+              
+					if (currentIndex === slides.length) {
+						currentIndex = 0;
+					}
+              
+					slides[currentIndex].classList.add('active');
+				}, intervalTime);
+			</script>
+		</section>
+
+		<section class="video">
+			<h2>This Is How We Build</h2>
+			<div class="video-container">
+			  <video src="yt5s.io-$2500 Gaming_Streaming PC Build [NO COMMENTARY ASMR]-(1080p)_Trim.mp4" class="video" width="1280" height="720" autoplay loop controls>
+			  </video>
+			</div>
+
+			<script>
+				var video = document.getElementById("myVideo");
+				video.addEventListener('loadedmetadata', function() {
+				  video.play();
+				});
+			  </script>
+			  
+		  </section>
+
+		<section class="products">
+			<div class="container">
+			  <h2>Browse Popular Categories</h2>
+			  <div class="product-list">
+				<div class="product">
+				  <div class="image-container">
+					<div class="overlay">
+					  <a href="Desktop.html" class="view-button">View</a>
+					</div>
+					<img src="Screenshot (47).png" height="500" width="600" alt="Desktop">
+				  </div>
+				  <h3>Desktop</h3>
+				</div>
+				<div class="product">
+				  <div class="image-container">
+					<div class="overlay">
+					  <a href="Monitor.html" class="view-button">View</a>
+					</div>
+					<img src="MONITOR .jpg" height="500" width="600" alt="Monitor">
+				  </div>
+				  <h3>Monitor</h3>
+				</div>
+				<div class="product">
+				  <div class="image-container">
+					<div class="overlay">
+					  <a href="Speaker.html" class="view-button">View</a>
+					</div>
+					<img src="Screenshot (45).png" height="500" width="600" alt="Speaker">
+				  </div>
+				  <h3>Speaker</h3>
+				</div>
+				<div class="product">
+				  <div class="image-container">
+					<div class="overlay">
+					  <a href="Headphone.html" class="view-button">View</a>
+					</div>
+					<img src="Screenshot (44).png" height="500" width="600" alt="Headphone">
+				  </div>
+				  <h3>Headphone</h3>
+				</div>
+				<div class="product">
+				  <div class="image-container">
+					<div class="overlay">
+					  <a href="Keyboard.html" class="view-button">View</a>
+					</div>
+					<img src="Screenshot (46).png" height="500" width="600" alt="Keyboard">
+				  </div>
+				  <h3>Keyboard</h3>
+				</div>
+				<div class="product">
+				  <div class="image-container">
+					<div class="overlay">
+					  <a href="Mouse.html" class="view-button">View</a>
+					</div>
+					<img src="MOUSE.jpg" height="500" width="600" alt="Mouse">
+				  </div>
+				  <h3>Mouse</h3>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		<section class="about-us">
+			<div class="container">
+				<h2>About Us</h2>
+				<p>Cyber Corner is a joint-venture business that has been providing high-quality PC gaming products since 2023. We offer a wide selection of hardware, software, and accessories to help you build the ultimate gaming setup.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Cyber Corner. All Rights Reserved.</p>
+			<p>This website is solely for assignment purposes only</p>
+		</div>
+	</footer>
+</body>
+</html>
+ 

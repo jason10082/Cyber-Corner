@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom PC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CustomPC.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="Screenshot__36_-removebg.png" width="250" height="40" alt="Logo">
+			<div id="menuButton" onclick="toggleMenu()">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+			<nav id="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+        <section class="customization">
+            <div class="container">
+                <h3>Customize Your PC</h3>
+                <div class="customization-options">
+                    <div id="product-options"></div>
+                    <div class="option">
+                        <img src="Screenshot (52).png" width="300px" height="300px" alt="CPU">
+                        <h4>CPU</h4>
+                        <p>Select your desired CPU</p>
+                        <select id="cpu-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="i3" data-price="549">Intel Core i3 13100F  RM 549</option>
+                            <option value="i5" data-price="929">Intel Core i5 13400F  RM 929</option>
+                            <option value="i7" data-price="1599">Intel Core i7 13700F  RM 1599</option>
+                            <option value="i9" data-price="2649">Intel Core i9 13900K  RM 2649</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="ZOTAC-4090-HERO.jpg" alt="GPU">
+                        <h4>GPU</h4>
+                        <p>Select your desired GPU</p>
+                        <select id="gpu-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="rtx3060" data-price="1609">ZOTAC GAMING GeForce RTX 3060  RM 1609</option>
+                            <option value="rtx3070" data-price="2399">ZOTAC GAMING GeForce RTX 3070  RM 2399</option>
+                            <option value="rtx3080" data-price="3399">ZOTAC GAMING GeForce RTX 3080  RM 3399</option>
+                            <option value="rtx4070" data-price="2999">ZOTAC GAMING GeForce RTX 4070  RM 2999</option>
+                            <option value="rtx4080" data-price="5999">ZOTAC GAMING GeForce RTX 4080  RM 5999</option>
+                            <option value="rtx4090" data-price="8399">ZOTAC GAMING GeForce RTX 4090  RM 8399</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="corsairaio02.webp" alt="Heatsink">
+                        <h4>Heatsink</h4>
+                        <p>Select your desired Heatsink</p>
+                        <select id="heatsink-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="EX400" data-price="99">PCCOOLER EX400 ARGB  RM 99</option>
+                            <option value="H7" data-price="219">CRYORIC H7 Quan-Lumi RM219</option>
+                            <option value="NH-D15" data-price="619">Noctua NH-D15  RM 619</option>
+                            <option value="X73" data-price="975">NZXT KRAKEN X73 RM 975</option>
+                            <option value="H170i" data-price="1399">CORSAIR iCUE H170i RM1399</option>
+                            <option value="CUSTOM" data-price="0">CUSTOM WATER COOLING- TO BE DISCUSSED LATER  RM 0</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="Ze6XggwqCN3H8svBucnSjG.jpg" alt="Motherboard">
+                        <h4>Motherboard</h4>
+                        <p>Select your desired Motherboard</p>
+                        <select id="motherboard-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="B660M" data-price="728">MAG B660M-A WIFI DDR4  RM728</option>
+                            <option value="B760-P" data-price="825">MSI PRO B760-P WIFI DDR4  RM 825</option>
+                            <option value="B760M" data-price="929">MSI B760M MORTAR WIFI DDR4  RM929 </option>
+                            <option value="TOMAHAWK" data-price="1552">MSI Z790 TOMAHAWK WIFI DDR5  RM1552 </option>
+                            <option value="GODLIKE" data-price="5900">MSI Z790 GODLIKE DDR5  RM 5900 </option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="153665426813.webp" alt="RAM">
+                        <h4>RAM</h4>
+                        <p>Select your desired RAM</p>
+                        <select id="ram-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="AEGIS 8GB" data-price="129">G.SKILL AEGIS 8GB DDR4  RM129</option>
+                            <option value="AEGIS 16GB" data-price="249">G.SKILL AEGIS 16GB (8 x 2) DDR4  RM249</option>
+                            <option value="TridentZ" data-price="359">G.SKILL TridentZ RGB 16GB (8 x 2) DDR4  RM 359</option>
+                            <option value="TridentZ" data-price="599">G.SKILL TridentZ RGB 16GB (8 x 2) DDR5  RM 599</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="magician-7-online-feature-01-overview-mo.webp" alt="Storage">
+                        <h4>Storage</h4>
+                        <p>Select your desired SSD</p>
+                        <select id="storage-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="970 PRO" data-price="299">SAMSUNG 970 PRO M.2 NVME 512GB  RM299</option>
+                            <option value="970 EVO" data-price="199">SAMSUNG 970 EVO M.2 NVME 500GB  RM199</option>
+                            <option value="980" data-price="399">SAMSUNG 980 M.2 NVME 1TB  RM399</option>
+                            <option value="980 PRO" data-price="1399">SAMSUNG 980 PRO M.2 NVME 2TB  RM1399</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="FSP-PCie-Gen5-PSU-1.jpg" width="300px" height="300px" alt="Power Supply">
+                        <h4>Power Supply</h4>
+                        <p>Select your desired Power Supply</p>
+                        <select id="powersupply-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="850W" data-price="579">FSP Hydro GT PRO 850W  RM579</option>
+                            <option value="1000W" data-price="829">FSP Hydro GT PRO 1000W  RM829</option>
+                            <option value="1200W" data-price="1199">FSP Hydro GT PRO 1200W  RM1199</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <img src="03.jpeg" alt="Case">
+                        <h4>Case</h4>
+                        <p>Select your desired Case</p>
+                        <select id="storage-select">
+                            <option value="Select">Click Here To Select Your Desired Component For Custom PC</option>
+                            <option value="970 PRO" data-price="199">antec df700 flux case  RM199</option>
+                            <option value="970 EVO" data-price="199">CORSAIR Carbide Series SPEC-DELTA  RM199</option>
+                            <option value="980" data-price="199">FRACTAL DESIGN Meshify 2 Nano  RM199</option>
+                            <option value="980 PRO" data-price="199">ANTEC NX410  RM199</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                function updateTotalPrice() {
+                  var selects = document.querySelectorAll('select');
+                  var totalPrice = 0;
+              
+                  selects.forEach(function (select) {
+                    var selectedOption = select.options[select.selectedIndex];
+                    var price = parseFloat(selectedOption.getAttribute('data-price'));
+                    if (!isNaN(price)) {
+                      totalPrice += price;
+                    }
+                  });
+              
+                  var totalAmountElement = document.getElementById('total-amount');
+                  totalAmountElement.textContent = 'RM' + totalPrice.toFixed(2);
+                }
+              
+                var selects = document.querySelectorAll('select');
+                selects.forEach(function (select) {
+                  select.addEventListener('change', updateTotalPrice);
+                });
+              </script>
+              
+        
+            <div id="total-price">Total Price: <span id="total-amount">RM0.00</span></div>
+            <div class="customization-details">
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 Cyber Corner. All Rights Reserved.</p>
+                <p>This website is solely for assignment purposes only</p>
+            </div>
+        </footer>
+        
+	</main>
+</body>
+</html>
+ 
