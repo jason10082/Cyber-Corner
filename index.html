@@ -5,7 +5,7 @@
 	<title>Cyber Corner</title>
 	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="carousel.css">
-		<style>
+			<style>
 		.container {
 			width: 90%;
 			margin: 0 auto;
@@ -42,6 +42,20 @@
 		footer {
 			text-align: center;
 			padding: 20px 0;
+		}
+
+		/* Media Queries */
+		@media screen and (max-width: 768px) {
+			.container {
+				width: 100%;
+			}
+			.carousel-slide img {
+				width: 100%;
+				height: auto;
+			}
+			.service .features, .products .product-list {
+				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			}
 		}
 	</style>
  </head>
