@@ -5,6 +5,38 @@
 	<title>Cyber Corner</title>
 	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="carousel.css">
+		<style>
+		@media screen and (max-width: 768px) {
+			/* Styles for screens up to 768px wide */
+			.hero-content {
+				text-align: center;
+			}
+			.carousel-slide img {
+				width: 100%;
+			}
+			.product-list {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+
+		@media screen and (min-width: 769px) {
+			/* Styles for screens larger than 768px wide */
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+			.carousel-slide img {
+				width: 100%;
+				max-width: 1200px;
+				height: auto;
+			}
+			.product-list {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px;
+			}
+		}
+	</style>
  </head>
 
 <body>
