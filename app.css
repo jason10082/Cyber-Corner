@@ -134,7 +134,7 @@ nav ul li a:hover {
 }
 
 .video-container {
-  position: relative;
+  position: center;
   width: 100%;
   padding-bottom: 800px;
   margin-top: 20px;
@@ -145,7 +145,7 @@ nav ul li a:hover {
 }
 
 .video-container .video {
-  position: absolute;
+  position: center;
   top: 0;
   left: 0;
   width:1280px;
