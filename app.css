@@ -120,7 +120,7 @@ nav ul li a:hover {
 }
 
 .video {
-  position: relative;
+  position: center;
   background-image: url('wallpaperflare.com_wallpaper\ \(3\).jpg');
   background-size: cover;
   background-position: center;
